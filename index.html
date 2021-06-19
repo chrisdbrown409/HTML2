@@ -1,42 +1,79 @@
 <!DOCTYPE html>
 <HTML>
   <Head>
-   <Title> "Chris' Web Page" </Title>
-  </Head>
+   <Title> "HTML1" </Title>
 
-<HR>
-<DIV> 
-<p style="font-family: times, serif; font-size:15pt; font-style:normal;"> <!---in line comments--->
-Wecome to My Web Page<br /> <!---in line comments--->
-</p>
-<p style="font-family: times, serif; font-size:12pt; font-style:normal"> <!---in line comments--->
-This page was built as the main page. This was built to help track Quality Assurance information by providing links to useful informaiton.<br /> <!---in line comments--->
-</p>
-</DIV> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
-<HR>
-<p style="font-family: times, serif; font-size:12pt; font-style:normal"> <!---in line comments--->
-Links to the following topics:<br /> <!--- reference: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered--->
-<ol>
-  <li><a href="https://chrisdbrown409.github.io/MainQA/" target="_blank">Quality Assurance Certifications</a></li>
-  <li>GitHub</li>
-  <li><a href="https://chrisdbrown409.github.io/MainHTML/" target="_blank">HTML</a></li>
-  <li><a href="https://chrisdbrown409.github.io/MainMarkdown/" target="_blank">MarkDown</a></li>
-  <li>SQL</li>
-  <li>Python</li>
-  <li>Java</li>
-  <li>Six Sigma</li>
-  <li><A href="https://chrisdbrown409.github.io/MainDigitalBadgeTracking/" target="_blank">Digal Badge Tracking</a></li>
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Image Text</h2>
+<p>How to place text over an image:</p>
+
+<div class="container">
+  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  <div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">Centered</div>
+</div>
+
+</body>
+
+
+
+  
+<!---  
+
   
   
-<p/>
-  
+
+  --->
 <HR>
 <DIV> 
  <!---Footer--->
  <p style="font-family: times, serif; font-size:09pt; font-style:normal; border:2px solid Black; background-color:#DBF9FC">
         <!---Color Ref: https://blog.hubspot.com/website/change-background-color-html--->
-  GitHub Code: <a href="https://github.com/chrisdbrown409/MainPage" target="_blank">https://github.com/chrisdbrown409/MainPage</a><br />
+  GitHub Code: <a href="https://github.com/chrisdbrown409/HTML1/edit/main/index.html" target="_blank">https://github.com/chrisdbrown409/HTML1/edit/main/index.html</a><br />
   Email: <a href = mailto:chrisdbrown409@gmail.com>chrisdbrown409@gmail.com</a><br /> <!---Ref: https://www.tutorialspoint.com/html/html_email_links.htm--->
   LinkedIn Profile: <a href="https://www.linkedin.com/in/chrisbrown72/" target="_blank">https://www.linkedin.com/in/chrisbrown72/</a><br />
   Version:1.0<br />
