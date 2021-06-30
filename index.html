@@ -182,7 +182,7 @@ body, html {
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 12px; /*font size of button text*/
+  font-size: 28px; /*font size of X to button*/
   font-weight: bold;
 }
 
@@ -192,6 +192,21 @@ body, html {
   text-decoration: none;
   cursor: pointer;
 }
+
+	
+.modalbutton {
+  	background-color: #4CAF50; /* Green */
+  	border: none;
+  	color: white;
+  	/*padding: 15px 32px;*/
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 10px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+	
 /*End Modal*/
 	
   </style>
@@ -280,7 +295,7 @@ body, html {
 		<b>This section lists common queries and scripts for SQL.</b><br /> 
 		<br />
 		
-    		
+  		
  
 <!-- Trigger/Open The Modal -->
 Query 1: <button id="myBtn">Open Query 1</button><br /><br />
@@ -356,14 +371,15 @@ window.onclick = function(event) {
 <!---start button 3 --->
 	<!-- Trigger/Open The Modal -->
 	<div>
-	Script 1: <button id="myBtn3">Open Script 1</button><br /><br />
+	Script 1: 	<button class="modalbutton mybtn3">Open Script 1</button><br /><br />
+			
 	</div>
 
 	<!-- The Modal -->
 	<div>
 		<div id="myModal" class="modal">
 	</div>
-	<!---end button 2 --->
+	<!---end button 3 --->
 
 
 
@@ -402,7 +418,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:4.10 (Working 1 Button 4.01) <br />
+  		Version:4.11 (Working 1 Button 4.01) <br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
