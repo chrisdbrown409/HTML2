@@ -137,7 +137,21 @@ body, html {
   .sidenav {padding-top: 220px;}
   .sidenav a {font-size: 12px;}
 }
-
+ footer {
+	/*position: Fixed; this makes it sticky always at the bottom of the page*/
+	/*margin-left: 40px;*/
+	/*margin-left: 4%; controlled by main class*/
+	width: 100%;
+	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
+	left: 0;
+	bottom: 0;
+	background-color: White;
+	color: blank;
+	text-align: left;
+  	font-size:8pt;
+  	font-style:normal;
+	font-family: times,serif;
+ }
 
 /*Begin Modal*/
 /* The Modal (background) */
@@ -196,21 +210,6 @@ body, html {
 	
 /*End Modal*/
 	
-footer {
-	/*position: Fixed; this makes it sticky always at the bottom of the page*/
-	/*margin-left: 40px;*/
-	/*margin-left: 4%; controlled by main class*/
-	width: 100%;
-	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
-	left: 0;
-	bottom: 0;
-	background-color: White;
-	color: blank;
-	text-align: left;
-  	font-size:8pt;
-  	font-style:normal;
-	font-family: times,serif;
- }
   </style>
 </head>
 
@@ -302,6 +301,8 @@ footer {
 <!-- Trigger/Open The Modal -->
 Query 1: <button id="myBtn">Open Query 1</button><br /><br />
 
+		
+
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -310,9 +311,8 @@ Query 1: <button id="myBtn">Open Query 1</button><br /><br />
     <span class="close">&times;</span>
 		<!--- non-responsive a TextArea tag this will retain formatting--->
 		<textarea id="input" name="input" rows="10" cols="50">
-Query 1-line 1
-Query 1-line 2
-Query 1-line 3
+Select * from table
+Select * from table where ID='1'
 		</textarea>
 	 
      	<!---<input id="input" type="Select * from table" --->
@@ -369,22 +369,7 @@ window.onclick = function(event) {
 	<div>
 		<div id="myModal" class="modal">
 	</div>
-		  <!-- Modal content -->
-  <div class="modal-content">
-    		<span class="close">&times;</span>
-		<!--- non-responsive a TextArea tag this will retain formatting--->
-		<textarea id="input" name="input" rows="10" cols="50">
-			Query 2-line 1 23
-			Query 2-line 2
-			Query 2-line 3
-		</textarea>
-	 
-     		<!---<input id="input" type="Select * from table" --->
-		<button id="Copy"> Copy </button>
-	</div>
-</div>
-
-<!---end button 2 --->
+	<!---end button 2 --->
 		
 <!---start button 3 --->
 	<!-- Trigger/Open The Modal -->
@@ -397,8 +382,7 @@ window.onclick = function(event) {
 	<div>
 		<div id="myModal" class="modal">
 	</div>
-</div>
-<!---end button 3 --->
+	<!---end button 3 --->
 
 
 
@@ -427,24 +411,17 @@ for (i = 0; i < coll.length; i++) {
 </div> <!---one more --->
 </div> <!---one more 4.7--->
 </div> <!---one more 4.9--->
-</div> <!---one more 4.19--->
-</div> <!---one more 4.19--->
-</div> <!---one more 4.21--->
-</div> <!---one more 4.22--->
-</div> <!---one more 4.23--->
-</div> <!---one more 4.30--->
 
 
 
- <div> 
-</div>
+
 
 
  <div> 
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:4.30 (Working 1 Button 4.01/.17) <br />
+  		Version:4.17 (Working 1 Button 4.01) <br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
@@ -459,4 +436,3 @@ Page References:
 	3. https://pranadi.co.uk/wp-content/themes/yootheme/cache/Autumn-Visualisation-1b6a2048.jpeg
 	4. https://dev.to/walternascimentobarroso/creating-copy-button-with-js-4763
 	
-
