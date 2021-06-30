@@ -286,7 +286,7 @@ body, html {
     		
  
 <!-- Trigger/Open The Modal -->
-<button id="myBtn1">Open Modal</button>
+<button id="myBtn1">button 1 query </button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -299,7 +299,16 @@ body, html {
 Select * from table
 Select * from table where ID='1'
 		</textarea>
-	 
+
+<button id="myBtn2">button 2 query</button>
+	    <div class="modal-content">
+    <span class="close">&times;</span>
+		<!--- non-responsive a TextArea tag this will retain formatting--->
+		<textarea id="input" name="input" rows="10" cols="50">
+button 2
+Select * from table where ID='1'
+		</textarea>
+	  
      	<!---<input id="input" type="Select * from table" --->
 	<button id="Copy"> Copy </button>
 
@@ -324,6 +333,9 @@ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn1");
+	
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn2");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -377,7 +389,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.19<br />
+  		Version:1.20<br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
