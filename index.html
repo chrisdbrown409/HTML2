@@ -162,8 +162,8 @@ body, html {
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
-  width: 60%; /* Full width */
-  height: 60%; /* Full height */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -175,7 +175,7 @@ body, html {
   margin: auto;
   padding: 4%;
   border: 1px solid #888;
-  width: 60%;
+  width: 100%;
 }
 
 /* Modal The Close Button */
@@ -314,15 +314,17 @@ for (i = 0; i < coll.length; i++) {
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
+	  <input id="input" type="text" />
 	  <textarea id="w3review" name="w3review" rows="10" cols="100">
 		  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
 		  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
 		  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
 		  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
  	 </textarea>
-	  
+	  <button id="execCopy"> execCopy </button>
      	<!---<button id="copyBtn">Copy</button>--->
-	<button id="execCopy"> execCopy </button>
+	
+	
   </div>
 
 </div>
@@ -361,7 +363,7 @@ window.onclick = function(event) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.05<br />
+  		Version:1.06<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
