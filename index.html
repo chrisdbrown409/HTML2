@@ -282,29 +282,8 @@ body, html {
 		Query: <br /><br />
 		Script: <br />
       		</p>
-    	</div>
+    		</div>
  
-	
-	
-<script><!--- collapse script--->
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-</d>
-
-
 <!-- Trigger/Open The Modal -->
 <button id="myBtn">Open Modal</button>
 
@@ -367,6 +346,27 @@ window.onclick = function(event) {
 </script>
 <div>
 </script>
+	
+	
+<script><!--- collapse script--->
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</d>
+
+
 
 
 
@@ -374,7 +374,7 @@ window.onclick = function(event) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.11d<br />
+  		Version:1.12<br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
