@@ -310,7 +310,7 @@ Query 1: <button id="myBtn">Open Query 1</button><br /><br />
   <div class="modal-content">
     <span class="close">&times;</span>
 		<!--- non-responsive a TextArea tag this will retain formatting--->
-		<textarea id="input" name="input" rows="10" cols="50">
+		<textarea id="input" name="input2" rows="10" cols="50">
 Select * from table
 Select * from table where ID='1'
 		</textarea>
@@ -322,7 +322,7 @@ Select * from table where ID='1'
 	// Type 2
 		document.getElementById('Copy').addEventListener('click', Copy);
 		async function Copy() {
-	  	let text = document.querySelector("#input").value;
+	  	let text = document.querySelector("#input2").value;
 	  	await navigator.clipboard.writeText(text);
 		}
 		</script>
@@ -361,12 +361,12 @@ window.onclick = function(event) {
 
 <!---start button 2 --->
 <!-- Trigger/Open The Modal -->
-Query 1: <button id="myBtn2">Open Query 2</button><br /><br />
+Query 2: <button id="myBtn2">Open Query 2</button><br /><br />
 
 		
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal2" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
@@ -449,6 +449,10 @@ for (i = 0; i < coll.length; i++) {
 </div> <!---one more --->
 </div> <!---one more 4.7--->
 </div> <!---one more 4.9--->
+</div><!---one more 4.19--->
+</div><!---one more 4.19--->
+</div><!---one more 4.19--->
+</div><!---one more 4.19--->
 
 
 
@@ -459,7 +463,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:4.18 (Working 1 Button 4.01,4.17 restore) <br />
+  		Version:4.19 (Working 1 Button 4.01,4.17 restore) <br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
