@@ -301,8 +301,6 @@ body, html {
 <!-- Trigger/Open The Modal -->
 Query 1: <button id="myBtn">Open Query 1</button><br /><br />
 
-		
-
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
@@ -311,8 +309,9 @@ Query 1: <button id="myBtn">Open Query 1</button><br /><br />
     <span class="close">&times;</span>
 		<!--- non-responsive a TextArea tag this will retain formatting--->
 		<textarea id="input" name="input" rows="10" cols="50">
-Select * from table
-Select * from table where ID='1'
+Query 1-line 1
+Query 1-line 2
+Query 1-line 3
 		</textarea>
 	 
      	<!---<input id="input" type="Select * from table" --->
@@ -369,7 +368,19 @@ window.onclick = function(event) {
 	<div>
 		<div id="myModal" class="modal">
 	</div>
-	<!---end button 2 --->
+		  <!-- Modal content -->
+  <div class="modal-content">
+    		<span class="close">&times;</span>
+		<!--- non-responsive a TextArea tag this will retain formatting--->
+		<textarea id="input" name="input" rows="10" cols="50">
+Query 2-line 1
+Query 2-line 2
+Query 2-line 3
+		</textarea>
+	 
+     		<!---<input id="input" type="Select * from table" --->
+		<button id="Copy"> Copy </button>
+<!---end button 2 --->
 		
 <!---start button 3 --->
 	<!-- Trigger/Open The Modal -->
@@ -421,7 +432,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:4.17 (Working 1 Button 4.01) <br />
+  		Version:4.18 (Working 1 Button 4.01) <br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
