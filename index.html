@@ -175,7 +175,7 @@ body, html {
   	margin: auto;
   	padding: 1%;
   	border: 1px solid #888;
-  	width: 50%;
+  	width: 50%; /*changes size of border window*/
 	}
 
 /* Modal The Close Button */
@@ -315,8 +315,9 @@ for (i = 0; i < coll.length; i++) {
   <div class="modal-content">
     <span class="close">&times;</span>
 	<textarea id="input" name="input" rows="10" cols="75">
-	Select * from table
-	Select * from table where ID='1'
+<!---this will retain formatting--->
+Select * from table
+Select * from table where ID='1'
 	</textarea>
 	 
      	<!---<input id="input" type="text" />--->
@@ -387,7 +388,7 @@ async function Copy() {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.06<br />
+  		Version:1.07<br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
