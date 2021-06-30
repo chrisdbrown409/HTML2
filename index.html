@@ -354,6 +354,7 @@ window.onclick = function(event) {
   }
 }
 </script>
+</script>
 <!---<div> --->
 <!---</script> --->
 
@@ -370,7 +371,7 @@ Query 2: <button id="myBtn2">Open Query 2</button><br /><br />
 
   <!-- Modal content -->
   <div id="modalcontent2" class="modal-content">
-    <div id="Close2" class="close">&times;</div>
+    <div id="Close2" class="close">&times;
 		<!--- non-responsive a TextArea tag this will retain formatting--->
 		<textarea id="input2" name="input" rows="10" cols="50">
 Query 2
@@ -381,8 +382,8 @@ Query 2
 
 	<script>	
 	// Type 2
-		document.getElementById('Copy2').addEventListener('click', Copy2);
-		async function Copy2() {
+		document.getElementById('Copy2').addEventListener('click', Copy);
+		async function Copy() {
 	  	let text = document.querySelector("#input2").value;
 	  	await navigator.clipboard.writeText(text);
 		}
@@ -459,7 +460,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:4.32(Working 1 Button 4.01,4.17, 4.22 restore) <br />
+  		Version:4.33(Working 1 Button 4.01,4.17, 4.22 restore) <br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
