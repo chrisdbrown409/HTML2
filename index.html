@@ -158,9 +158,8 @@ body, html {
 .modal {
   	display: none; /* Hidden by default */
   	position: fixed; /* Stay in place */
-  	/*z-index: 1; /* Sit on top */
-  	Left margin: 17%;*/
-	padding-top: 10%; /* Location of the box */
+  	z-index: 1; /* Sit on top */
+  	padding-top: 100px; /* Location of the box */
   	left: 0;
   	top: 0;
   	width: 100%; /* Full width */
@@ -173,10 +172,10 @@ body, html {
 /* Modal Content */
 	.modal-content {
   	background-color: #fefefe;
-  	Left margin: 17%;*/
-  	padding: 2%;
+  	margin: auto;
+  	padding: 3%;
   	border: 1px solid #888;
-  	width: 25%;
+  	width: 60%;
 	}
 
 /* Modal The Close Button */
@@ -374,7 +373,6 @@ window.onclick = function(event) {
 <d>
 <input id="input" type="text" />
 <button id="Copy"> Copy </button>
-
 <script>	
 // Type 2
 document.getElementById('Copy').addEventListener('click', Copy);
@@ -389,7 +387,7 @@ async function Copy() {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:1.16<br />
+  		Version:1.13<br />
   		Last Update:06-26-2021<br />
 	<HR>
 </Footer>
