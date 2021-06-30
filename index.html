@@ -370,19 +370,19 @@ Query 2: <button id="myBtn2">Open Query 2</button><br /><br />
 
   <!-- Modal content -->
   <div id="modalcontent2" class="modal-content">
-    <span class="close">&times;</span>
+    <div id="Close2" class="close">&times;</div>
 		<!--- non-responsive a TextArea tag this will retain formatting--->
 		<textarea id="input2" name="input2" rows="10" cols="50">
 Query 2
 		</textarea>
 	 
      	<!---<input id="input" type="Select * from table" --->
-	<button id="Copy2"> Copy </button>
+	<button id="Copy2"> Copy2 </button>
 
 	<script>	
 	// Type 2
-		document.getElementById('Copy2').addEventListener('click', Copy);
-		async function Copy() {
+		document.getElementById('Copy2').addEventListener('click', Copy2);
+		async function Copy2() {
 	  	let text = document.querySelector("#input2").value;
 	  	await navigator.clipboard.writeText(text);
 		}
@@ -398,7 +398,7 @@ var modal = document.getElementById("myModal2");
 var btn = document.getElementById("myBtn2");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close2")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -459,7 +459,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:4.26 (Working 1 Button 4.01,4.17, 4.22 restore) <br />
+  		Version:4.27 (Working 1 Button 4.01,4.17, 4.22 restore) <br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
