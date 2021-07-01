@@ -308,23 +308,27 @@ Query 1: <button id="myBtn">Open Query 1</button><br /><br />
   <div class="modal-content">
     <span class="close">&times;</span>
 		<!--- non-responsive a TextArea tag this will retain formatting--->
-		<textarea id="input" name="input" rows="10" cols="50">
+		<!---	
+	  <textarea id="input" name="input" rows="10" cols="50">
 Select * from table
 Select * from table where ID='19d'
 		</textarea>
-	 
+	 --->
      	<!---<input id="input" type="Select * from table" --->
 	<button id="Copy"> Copy </button>
+	<input id="input" type="text" />
+	<button id="clipboardCopy"> clipboardCopy </button>
 
-	<script>	
-	// Type 2
-		document.getElementById('Copy').addEventListener('click', Copy);
-		async function Copy() {
-	  	let text = document.querySelector("#input").value;
-	  	await navigator.clipboard.writeText(text);
-		}
-		</script>
-		</d>
+	<script>
+	document.getElementById('clipboardCopy').addEventListener('click', clipboardCopy);
+	async function clipboardCopy() {
+  	let text = document.querySelector("#input").value;
+  	await navigator.clipboard.writeText(text);
+	}
+	</script>
+	</d>
+	
+	
   </div>
 </div>
 <script>
@@ -400,7 +404,7 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 	<HR>  
    		<b>Repository Information:</b><br />
-  		Version:4.22 (Working 1 Button 4.01,4.17 restore) <br />
+  		Version:4.23 (Working 1 Button 4.01,4.17 restore) <br />
   		Last Update:06-30-2021<br />
 	<HR>
 </Footer>
